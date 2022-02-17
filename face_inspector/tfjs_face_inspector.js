@@ -61,10 +61,10 @@ async function
 init_tfjs_face_inspector ()
 {
     try {
-        let url = "./model/tfjs_model_face_detection_front/model.json";
+        let url = "/model/tfjs_model_face_detection_front/model.json";
         s_detect_model = await tf.loadGraphModel(url);
 
-        let url_age_gender = "./model/age_gender_estimation/model.json";
+        let url_age_gender = "/model/age_gender_estimation/model.json";
         s_age_gender_model = await tf.loadGraphModel(url_age_gender);
     }
     catch (e) {
